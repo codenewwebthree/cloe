@@ -1,0 +1,21 @@
+{
+  "name": "@cloe/tableland",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cloe/types": "workspace:*",
+    "@tableland/sdk": "^5.0.0",
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@cloe/lit-ai",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "deploy-actions": "node scripts/deploy-actions.js"
+  },
+  "dependencies": {
+    "@cloe/types": "workspace:*",
+    "@lit-protocol/lit-node-client": "^6.0.0",
+    "@lit-protocol/constants": "^6.0.0",
+    "@lit-protocol/auth-helpers": "^6.0.0",
+    "@lit-protocol/contracts-sdk": "^0.0.50",
+    "ethers": "^5.7.2",
+    "siwe": "^2.1.4"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.0.0"
+  }
+}
